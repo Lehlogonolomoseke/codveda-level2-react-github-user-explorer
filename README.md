@@ -1,86 +1,140 @@
-# GitHub Explorer 
+# GitHub Explorer – Codveda Technologies Internship (Level 2)
 
-A React application that allows users to search for GitHub profiles and view their repositories using the GitHub API.
+This project was developed as part of my Frontend Development Internship at Codveda Technologies under Level 2 Task: Single Page Application (SPA) and REST API Integration.
 
-This project was built as part of the Codveda Frontend Internship Level 2.
+The application allows users to search for GitHub profiles and view their public repositories using the GitHub REST API.
+
+---
+
+## Live Repository
+
+Repository Link:  
+https://github.com/Lehlogonolomoseke/codveda-level2-react-github-user-explorer
 
 ---
 
 ## Features
 
-• Search GitHub users  
-• View user profile information  
-• View list of repositories  
-• Error handling  
+• Search for any GitHub username  
+• Display user profile information  
+• Display public repositories  
 • Loading indicator  
-• Clean and responsive UI  
+• Error handling  
+• Responsive modern UI  
 
 ---
 
-## Built With
+## Technologies Used
 
-• React  
-• Vite  
-• JavaScript  
-• CSS  
+• React (Vite)  
+• JavaScript (ES6)  
+• CSS3  
 • GitHub REST API  
 
 ---
 
 ## Project Structure
 
-src/
+```
+codveda-level2-react-github-user-explorer
 
-components/
+src
+│
+├── components
+│   ├── Search.jsx
+│   ├── UserProfile.jsx
+│   └── RepoList.jsx
+│
+├── services
+│   └── githubService.js
+│
+├── styles
+│   └── app.css
+│
+└── App.jsx
 
-Search.jsx
+screenshots
+```
 
-UserProfile.jsx
+---
 
-RepoList.jsx
+## Screenshots
 
-services/
+### Search Interface
 
-githubService.js
+![Search](./screenshots/search.png)
 
-styles/
+---
 
-app.css
+### User Profile and Repository Display
 
-App.jsx
-
-main.jsx
+![Profile](./screenshots/profile.png)
 
 ---
 
 ## How to Run Project
 
-Install dependencies:
+Clone repository
 
+```
+git clone https://github.com/Lehlogonolomoseke/codveda-level2-react-github-user-explorer.git
+```
+
+Go into folder
+
+```
+cd codveda-level2-react-github-user-explorer
+```
+
+Install dependencies
+
+```
 npm install
+```
 
-Run project:
+Run project
 
+```
 npm run dev
+```
 
 ---
 
-## GitHub API Used
+## Learning Outcomes
 
-https://api.github.com/users/{username}
+This project helped me strengthen my skills in:
 
-https://api.github.com/users/{username}/repos
+• React development  
+• API integration  
+• Component-based architecture  
+• State management  
+• Error handling  
+• Frontend project structuring  
 
 ---
 
-## Internship
+## Internship Information
 
-Codveda Frontend Internship
-
-Level 2 Task
+Company: Codveda Technologies  
+Role: Frontend Development Intern  
+Level: Level 2  
 
 ---
 
 ## Author
 
-Lehlogonolo Moseke
+Lehlogonolo Moseke  
+
+BSc Information Technology (Computer Science & Informatics)
+
+GitHub:  
+https://github.com/Lehlogonolomoseke
+
+LinkedIn:  
+https://linkedin.com/in/lehlogonolo-moseke-474a8a280
+
+---
+
+## Project Status
+
+Completed
