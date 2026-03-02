@@ -6,14 +6,14 @@ It is a modern React Single Page Application that integrates with the GitHub RES
 
 ---
 
-## 🚀 Repository Link
+## Repository Link
 
 GitHub Repository:  
 https://github.com/Lehlogonolomoseke/codveda-level2-react-github-user-explorer
 
 ---
 
-## ✨ Features
+## Features
 
 - Search for any GitHub username
 - Display user profile information
@@ -27,7 +27,7 @@ https://github.com/Lehlogonolomoseke/codveda-level2-react-github-user-explorer
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - React (Vite)
 - React Router
@@ -37,7 +37,7 @@ https://github.com/Lehlogonolomoseke/codveda-level2-react-github-user-explorer
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 src
 │
@@ -66,27 +66,27 @@ src
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### Home / Search Page
 
-![Home](./screenshots/home.png)
+![Home](./screenshots/home.jpeg)
 
 ### Results (User Profile + Repositories)
 
-![Results](./screenshots/results.png)
+![Results](./screenshots/results.jpeg)
 
 ### About Page
 
-![About](./screenshots/about.png)
+![About](./screenshots/about.jpeg)
 
 ### Contact Page
 
-![Contact](./screenshots/contact.png)
+![Contact](./screenshots/contact.jpeg)
 
 ### Error State (Invalid User)
 
-![Error](./screenshots/error.png)
+![Error](./screenshots/error.jpeg)
 
 ---
 
@@ -100,7 +100,7 @@ src
 
 ---
 
-## ▶ How to Run Locally
+## How to Run Locally
 
 Clone the repository:
 
@@ -117,7 +117,7 @@ Run the development server: npm run dev
 
 ---
 
-## 🎓 Learning Outcomes
+## Learning Outcomes
 
 This project strengthened my understanding of:
 
@@ -130,7 +130,7 @@ This project strengthened my understanding of:
 
 ---
 
-## 🏢 Internship Information
+## Internship Information
 
 Company: Codveda Technologies
 Role: Frontend Development Intern
@@ -138,7 +138,7 @@ Level: Level 2
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 Lehlogonolo Moseke
 
@@ -152,7 +152,7 @@ https://linkedin.com/in/lehlogonolo-moseke-474a8a280
 
 ---
 
-## 📌 Status
+## Status
 
 Completed
 
