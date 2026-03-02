@@ -68,13 +68,25 @@ src
 
 ## 📸 Screenshots
 
-### Search Interface
+### Home / Search Page
 
-![Search](./screenshots/search.png)
+![Home](./screenshots/home.png)
 
-### User Profile and Repository Display
+### Results (User Profile + Repositories)
 
-![Profile](./screenshots/profile.png)
+![Results](./screenshots/results.png)
+
+### About Page
+
+![About](./screenshots/about.png)
+
+### Contact Page
+
+![Contact](./screenshots/contact.png)
+
+### Error State (Invalid User)
+
+![Error](./screenshots/error.png)
 
 ---
 
@@ -91,6 +103,8 @@ src
 ## ▶ How to Run Locally
 
 Clone the repository:
+
+```bash
 git clone https://github.com/Lehlogonolomoseke/codveda-level2-react-github-user-explorer.git
 
 Navigate into the folder: Navigate into the folder: cd codveda-level2-react-github-user-explorer
@@ -107,34 +121,34 @@ Run the development server: npm run dev
 
 This project strengthened my understanding of:
 
-- Building Single Page Applications with React  
-- Integrating REST APIs  
-- Managing asynchronous data  
-- Implementing dynamic routing  
-- Handling loading and error states  
-- Structuring scalable frontend applications  
+- Building Single Page Applications with React
+- Integrating REST APIs
+- Managing asynchronous data
+- Implementing dynamic routing
+- Handling loading and error states
+- Structuring scalable frontend applications
 
 ---
 
 ## 🏢 Internship Information
 
-Company: Codveda Technologies  
-Role: Frontend Development Intern  
-Level: Level 2  
+Company: Codveda Technologies
+Role: Frontend Development Intern
+Level: Level 2
 
 ---
 
 ## 👨‍💻 Author
 
-Lehlogonolo Moseke  
+Lehlogonolo Moseke
 
 BSc Information Technology (Computer Science & Informatics)
 
-GitHub:  
-https://github.com/Lehlogonolomoseke  
+GitHub:
+https://github.com/Lehlogonolomoseke
 
-LinkedIn:  
-https://linkedin.com/in/lehlogonolo-moseke-474a8a280  
+LinkedIn:
+https://linkedin.com/in/lehlogonolo-moseke-474a8a280
 
 ---
 
@@ -143,3 +157,4 @@ https://linkedin.com/in/lehlogonolo-moseke-474a8a280
 Completed
 
 
+```
