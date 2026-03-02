@@ -1,70 +1,76 @@
 # GitHub Explorer – Codveda Technologies Internship (Level 2)
 
-This project was developed as part of my Frontend Development Internship at Codveda Technologies under Level 2 Task: Single Page Application (SPA) and REST API Integration.
+This project was developed as part of my Frontend Development Internship at **Codveda Technologies** under **Level 2 Task: Single Page Application (SPA) and REST API Integration**.
 
-The application allows users to search for GitHub profiles and view their public repositories using the GitHub REST API.
+It is a modern React Single Page Application that integrates with the GitHub REST API to search users and dynamically display profile and repository information.
 
 ---
 
-## Live Repository
+## 🚀 Repository Link
 
-Repository Link:  
+GitHub Repository:  
 https://github.com/Lehlogonolomoseke/codveda-level2-react-github-user-explorer
 
 ---
 
-## Features
+## ✨ Features
 
-• Search for any GitHub username  
-• Display user profile information  
-• Display public repositories  
-• Loading indicator  
-• Error handling  
-• Responsive modern UI
-
----
-
-## Technologies Used
-
-• React (Vite)  
-• JavaScript (ES6)  
-• CSS3  
-• GitHub REST API
+- Search for any GitHub username
+- Display user profile information
+- Display public repositories
+- Dynamic routing using React Router
+- Loading indicator during API calls
+- Error handling for invalid users
+- Debounced search input
+- Responsive modern UI
+- Multi-page SPA (Home, About, Contact, Results)
 
 ---
 
-## Project Structure
+## 🛠 Technologies Used
 
-```
-codveda-level2-react-github-user-explorer
+- React (Vite)
+- React Router
+- JavaScript (ES6+)
+- CSS3
+- GitHub REST API
+
+---
+
+## 📂 Project Structure
 
 src
 │
 ├── components
-│   ├── Search.jsx
-│   ├── UserProfile.jsx
-│   └── RepoList.jsx
+│ ├── Navbar.jsx
+│ ├── Search.jsx
+│ ├── UserProfile.jsx
+│ ├── RepoList.jsx
+│ ├── Loader.jsx
+│ └── Error.jsx
+│
+├── pages
+│ ├── Home.jsx
+│ ├── About.jsx
+│ ├── Contact.jsx
+│ └── User.jsx
 │
 ├── services
-│   └── githubService.js
+│ └── githubService.js
 │
 ├── styles
-│   └── app.css
+│ └── app.css
 │
-└── App.jsx
-
-screenshots
-```
+├── App.jsx
+└── main.jsx
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
 ### Search Interface
 
 ![Search](./screenshots/search.png)
-
----
 
 ### User Profile and Repository Display
 
@@ -72,69 +78,68 @@ screenshots
 
 ---
 
-## How to Run Project
+## ⚙ How It Works
 
-Clone repository
+1. User enters a GitHub username.
+2. The app sends a request to the GitHub REST API.
+3. Profile and repository data are fetched dynamically.
+4. Loading and error states are handled gracefully.
+5. Results are displayed without page reload (SPA behavior).
 
-```
+---
+
+## ▶ How to Run Locally
+
+Clone the repository:
 git clone https://github.com/Lehlogonolomoseke/codveda-level2-react-github-user-explorer.git
-```
 
-Go into folder
+Navigate into the folder: Navigate into the folder: cd codveda-level2-react-github-user-explorer
 
-```
-cd codveda-level2-react-github-user-explorer
-```
+Install dependencies: npm install
 
-Install dependencies
 
-```
-npm install
-```
+Run the development server: npm run dev
 
-Run project
-
-```
-npm run dev
-```
 
 ---
 
-## Learning Outcomes
+## 🎓 Learning Outcomes
 
-This project helped me strengthen my skills in:
+This project strengthened my understanding of:
 
-• React development  
-• API integration  
-• Component-based architecture  
-• State management  
-• Error handling  
-• Frontend project structuring
+- Building Single Page Applications with React  
+- Integrating REST APIs  
+- Managing asynchronous data  
+- Implementing dynamic routing  
+- Handling loading and error states  
+- Structuring scalable frontend applications  
 
 ---
 
-## Internship Information
+## 🏢 Internship Information
 
 Company: Codveda Technologies  
 Role: Frontend Development Intern  
-Level: Level 2
+Level: Level 2  
 
 ---
 
-## Author
+## 👨‍💻 Author
 
-Lehlogonolo Moseke
+Lehlogonolo Moseke  
 
 BSc Information Technology (Computer Science & Informatics)
 
 GitHub:  
-https://github.com/Lehlogonolomoseke
+https://github.com/Lehlogonolomoseke  
 
 LinkedIn:  
-https://linkedin.com/in/lehlogonolo-moseke-474a8a280
+https://linkedin.com/in/lehlogonolo-moseke-474a8a280  
 
 ---
 
-## Project Status
+## 📌 Status
 
 Completed
+
+
