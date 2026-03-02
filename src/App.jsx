@@ -1,63 +1,71 @@
-import { useState } from "react";
-import Search from "./components/Search";
-import UserProfile from "./components/UserProfile";
-import RepoList from "./components/RepoList";
-import Loader from "./components/Loader";
-import Error from "./components/Error";
-
+import { useEffect, useState } from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import User from "./pages/User";
 import { fetchUser, fetchRepos } from "./services/githubService";
-
 import "./styles/app.css";
 
 function App() {
+  const navigate = useNavigate();
+
+  const [inputValue, setInputValue] = useState("");
+
   const [user, setUser] = useState(null);
-
   const [repos, setRepos] = useState([]);
-
   const [error, setError] = useState("");
-
   const [loading, setLoading] = useState(false);
 
   const handleSearch = async (username) => {
+    const finalUsername = username.trim();
+    if (!finalUsername) return;
     setLoading(true);
-
     setError("");
-
     setUser(null);
-
     setRepos([]);
 
     try {
-      const userData = await fetchUser(username);
-
-      const repoData = await fetchRepos(username);
+      const userData = await fetchUser(finalUsername);
+      const repoData = await fetchRepos(finalUsername);
 
       setUser(userData);
-
       setRepos(repoData);
+
+      navigate("/user");
     } catch (err) {
-      setError(err.message);
+      setError(err.message || "Something went wrong");
+      navigate("/user");
     }
 
     setLoading(false);
   };
 
   return (
-    <div className="container">
-      <h1 className="title">Lehlogonolo GitHub Explorer</h1>
-
-      <Search onSearch={handleSearch} />
-
-      {loading && <Loader />}
-
-      {error && <Error message={error} />}
-
-      {user && <UserProfile user={user} />}
-
-      {repos.length > 0 && <RepoList repos={repos} />}
-
-      <footer className="footer">Developed by Lehlogonolo Moseke</footer>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Home
+              onSearch={handleSearch}
+              inputValue={inputValue}
+              onInputChange={setInputValue}
+            />
+          }
+        />
+        <Route
+          path="/user"
+          element={
+            <User user={user} repos={repos} loading={loading} error={error} />
+          }
+        />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </>
   );
 }
 

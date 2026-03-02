@@ -1,5 +1,5 @@
-function Loader() {
-  return <p className="loading">Loading...</p>;
+function Error({ message }) {
+  return <div className="error">{message}</div>;
 }
 
-export default Loader;
+export default Error;

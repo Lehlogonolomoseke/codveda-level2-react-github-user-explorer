@@ -1,17 +1,30 @@
 function RepoList({ repos }) {
   return (
-    <div>
-      <h2>Repositories</h2>
+    <div className="card">
+      <h3 style={{ marginTop: 0 }}>Repositories</h3>
 
-      {repos.map((repo) => (
-        <div key={repo.id} className="repo-card">
-          <a href={repo.html_url} target="_blank">
-            {repo.name}
-          </a>
+      <div className="repo-grid">
+        {repos.map((repo) => (
+          <div key={repo.id} className="repo-card">
+            <a className="repo-link" href={repo.html_url} target="_blank">
+              {repo.name}
+            </a>
 
-          <p>{repo.description}</p>
-        </div>
-      ))}
+            <p className="repo-desc">
+              ⭐ {repo.stargazers_count}{" "}
+              {repo.language ? `• ${repo.language}` : ""}
+            </p>
+
+            {repo.description && (
+              <p className="repo-desc">
+                {repo.description.length > 80
+                  ? repo.description.slice(0, 80) + "..."
+                  : repo.description}
+              </p>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

@@ -1,26 +1,20 @@
-import { useState } from "react";
-
-function Search({ onSearch }) {
-  const [username, setUsername] = useState("");
-
+function Search({ onSearch, inputValue, onInputChange }) {
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    onSearch(username);
+    if (!inputValue.trim()) return;
+    onSearch(inputValue.trim());
   };
 
   return (
-    <form className="search-form" onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="search-row">
       <input
-        className="search-input"
         type="text"
         placeholder="Enter GitHub username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-        required
+        value={inputValue}
+        onChange={(e) => onInputChange(e.target.value)}
+        className="search-input"
       />
-
-      <button className="search-button" type="submit">
+      <button type="submit" className="search-btn">
         Search
       </button>
     </form>
